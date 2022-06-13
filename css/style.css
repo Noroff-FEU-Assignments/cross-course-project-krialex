@@ -1,0 +1,38 @@
+body {
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+
+/* logo */
+.logo {
+    
+}
+
+/* navigation */
+nav li {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px 10px;
+}
+
+/* Homepage */
+.welcome {
+  background-image: url(../images/homepage1.jpg);
+  height: 400px;
+  background-attachment: ;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 56px;
+}
+.float {
+    float: left;
+}
+
+
+header {
+    background-color: #F3F2F2;
+}
+footer {
+    background-color: #707070;
+}
