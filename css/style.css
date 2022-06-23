@@ -1,11 +1,16 @@
 body {
     font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0px;
+    min-height: 100vh;
 }
 
 
 /* logo */
 .logo {
-    
+    width: 200px;
+    margin-left: 60px;
 }
 
 /* navigation */
@@ -18,17 +23,41 @@ nav li {
 /* Homepage */
 .welcome {
   background-image: url(../images/homepage1.jpg);
-  height: 400px;
-  background-attachment: ;
+  height: 500px;
+  width: 1000px;
+  margin: 40px auto;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   font-size: 56px;
-}
-.float {
-    float: left;
+  text-align: left;
 }
 
+.selling__points {
+    display: grid;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.selling__points h2 {
+    grid-column: -1/1;
+}
+
+.product__images img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.arrow {
+    float: right;
+}
 
 header {
     background-color: #F3F2F2;
