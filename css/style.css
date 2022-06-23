@@ -49,12 +49,6 @@ nav li {
     width: 100%;
 }
 
-
-
-
-
-
-
 .arrow {
     float: right;
 }
@@ -64,4 +58,14 @@ header {
 }
 footer {
     background-color: #707070;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 200px;
+    margin-top: 20px;
 }
+
+footer div {
+    color: #FFF;
+}
+
+
