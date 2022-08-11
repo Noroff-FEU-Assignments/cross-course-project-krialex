@@ -22,10 +22,24 @@ footer div {
     color: #FFF;
 }
 
+.footer_text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.icons {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 
 /* logo */
 .logo {
-    width: 260px;
+    max-width: 260px;
     margin: 10px 60px 0px 70px;
 }
 
@@ -33,11 +47,17 @@ footer div {
 nav li {
     display: inline-block;
     border: 1px solid #0B3A40;
-    padding: 3px 10px;
+    border-radius: 4px;
+    padding: 2px 30px;
     text-align: center;
     text-transform: uppercase;
     color: #0B3A40;
-    border-color: #0B3A40;
+    width: 90px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .header-container {
@@ -57,17 +77,19 @@ nav li {
 input[type=text] {
    width: 350px;
    height: 25px;
-   margin: 60px 100px 15px;
+   margin: 60px 150px 15px 0px;
+   font-size: 20px;
+   padding: 6px;
 }
 
 .container {
     display: flex;
     margin: 2px 200px 0px;
+    justify-content: center;
 }
 
 .item {
     flex: 1;
-    background-color: #FFF;
 }
 
 
@@ -96,31 +118,112 @@ h1 {
 }
 
 .selling__points {
-    display: grid;
-    max-width: 1000px;
+    /*
+    display: grid; */
+    max-width: 1200px;
     margin: 50px auto;
     text-align: center;
-    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: repeat(4, 1fr);*/
     position: relative;
+   
 }
 
 h2 {
-    grid-column: -1/1;
+    /*grid-column: -1/1;*/
     font-family: Palatino Linotype;
     font-size: 48px;
 }
 
+.product__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+/*
 .product__images img {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
+}
+*/
+
+.p_image {
+    width: 100%;
 }
 
+
 .arrow {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
 }
+
+.buyjackets {
+    background-image: url(../images/RainyDaysLandskape.jpg);
+    height: 670px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "h3 h3";
+    grid-template-rows: auto 1fr 1fr;
+    place-items: center;
+    justify-content: start;
+    margin: 150px 0px;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.buyjackets a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    border: 2px solid white;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {grid-area: h3;}
+
+.shop1 {
+    margin-left: 60px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    font-weight: bold;
+}
+
+.newsletter p {
+    margin: 0px 10px 0px 60px;
+}
+
+input[type=email] {
+    width: 350px;
+    height: 25px;
+    margin: 0px 10px;
+ }
+
+ input[type=submit] {
+    width: 200px;
+    height: 30px;
+    background: #0B3A40;
+    color: white;
+    text-transform: uppercase;
+    border-color: #0B3A40;
+    border-radius: 6px;
+ } 
 
 
