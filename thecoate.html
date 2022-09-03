@@ -13,19 +13,23 @@
     <section class="header-container">
       <div class="header-item">
         <a href="index.html">
-          <img src="../images/logo redigert.png" alt="Rainy Days" class="logo">
+          <img src="../images/logo_redigert.png" alt="Rainy Days" class="logo">
         </a>
       </div>
           <div class="header-item">
             <input type="text" name="searchbar">
           </div>
+          <div class="header-item">
           <a href="userprofile.html" class="header-item">
             <i class="fa-solid fa-user"></i></a>
           <a href="myfavorites.html" class="header-item">
             <i class="fa-solid fa-heart"></i></a>
           <a href="shoppingcart.html" class="header-item">
             <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
     </section> 
+    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
         <nav>
            <ul class="container">
               <li><a href="men.html" class="item">Men</a></li>
@@ -38,7 +42,84 @@
         </nav>
  </header>
  <main>
-
+    <section class="specific-product">
+        <div class="product-pic">
+          <img src="../images/blue-jacket.png" alt="Blue jacket">
+        </div>
+        <section class="about-jacket"> 
+        <div>
+          <h2>The Coate</h2>
+          <p>This jacket has a water-repellent surface, and with a slightly lined inside it will be suitable for trips in all kinds of weather in spring, summer and autumn.</p>
+          <p>1250 kr</p>
+        </div>
+        <div class="size-options">
+          <div class="size-options-select">
+            <span class="size-select">s</span>
+          </div>
+          <div class="size-options-select">
+            <span class="size-select">m</span>
+          </div>
+          <div class="size-options-select">
+            <span class="size-select">l</span>
+          </div>
+          <div class="size-options-select">
+            <span class="size-select">xl</span>
+          </div>
+          <div class="size-options-select">
+            <span class="size-select">xxl</span>
+          </div>
+          <button type="button" onclick="chart.html">add to chart</button>
+        </div>
+      </section>
+      </section>
+      <div class="dropdown">
+        <button onclick="myfunction()" class="d-dbtn">description</button>
+          <div id="mydropdown" class="dropdown-content">
+            <p>The water-repellent surface has been technologically researched to find the perfect balance of air and water-repellent to give our users the best possible experience on a trip in nature.</p>
+            <p>This is a jacket that warms on cooler days and keeps you dry in light rain showers.</p>
+          </div>
+          <button onclick="myfunction()" class="d-dbtn">features</button>
+          <div id="mydropdown" class="dropdown-content">
+            <p>The water-repellent surface has been technologically researched to find the perfect balance of air and water-repellent to give our users the best possible experience on a trip in nature.</p>
+            <p>This is a jacket that warms on cooler days and keeps you dry in light rain showers.</p>
+          </div>
+          <button onclick="myfunction()" class="d-dbtn">size-guide</button>
+          <div id="mydropdown" class="dropdown-content">
+            <p>The water-repellent surface has been technologically researched to find the perfect balance of air and water-repellent to give our users the best possible experience on a trip in nature.</p>
+            <p>This is a jacket that warms on cooler days and keeps you dry in light rain showers.</p>
+          </div>  
+      </div>
+      <section class="review">
+        <h2>Costumer review</h2>
+          <div class="review-one">
+            <h4>John Doe</h4>
+              <div class="star"> 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            <p>It is the best jacket I have ever hade. It lived up to my expectations. I`m very happy!</p>
+          </div>
+          <div class="review-one">
+            <h4>Jane Doe</h4>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            <p>The jacket is ok! It substains the rain, but it is not as pretty as I expected.</p>
+          </div>
+      </section>
+      <section class="newsletter">
+        <p>Get our newsletter</p>
+          <form method="post">
+            <input type="email" id="email" name="Enter your email" placeholder="Enter your email"/>
+            <input type="submit" value="subscribe" />
+          </form>
+      </section>
  </main>
  <footer>
     <div>

@@ -1,7 +1,5 @@
 body {
     font-family: "Verdana", Geneva, Tahoma, sans-serif;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
     margin: 0px;
     min-height: 100vh;
 }
@@ -76,25 +74,21 @@ nav a {
 }
 
 .header-container {
-    display: flex;
-    align-items: baseline;
-    margin-left: 10px;
-    margin-top: 10px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+    justify-items: center;
 }
 
 .header-item {
-    flex: 1;
-    font-size: 1.5em;
     max-width: fit-content;
     margin-right: 5px;
     color: #0B3A40;
 }
 
 .container {
-
     position: absolute;
-    top: 97px;
+    top: 67px;
     background: #F3F2F2;
     z-index: 1000;
 }
@@ -132,7 +126,7 @@ h1 {
 h2 {
     font-family: Palatino Linotype;
     font-size: 2em;
-    margin-left: 40px;
+    text-align: center;
 }
 
 .product__images {
@@ -156,7 +150,7 @@ h2 {
     margin-right: 10px;
 }
 
-.p_image img {
+.p_image img, .product-pic img {
    width: 250px;
    height: 300px;
 } 
@@ -232,49 +226,109 @@ input[type=email] {
     text-transform: uppercase;
     border-color: #0B3A40;
     border-radius: 6px;
+    cursor: pointer;
  } 
+
+    /*Mens site*/
+    .product-men, .specific-product, .review, .dropdown, .main-site {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+
+   .product-pic a {
+    text-decoration: none;
+    color: black;
+   }
+
+   .product-pic p {
+    margin: 5px 0px;
+   } 
+
+   /*The Coate*/
+  
+   .size-options button {
+    width: 200px;
+    height: 30px;
+    background-color: #0B3A40;
+    color: #FFF;
+    border-color: #0B3A40;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+   }
+
+   .size-options {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: auto;
+   }
+   
+   .size-options-select {
+    border: 2px solid rgb(203, 203, 203);
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+
+   }
+
+   .specific-product {
+    margin-top: 20px;
+   }
+
+   .d-dbtn {
+    border: 1px solid;
+    padding: 10px 50px;
+    background-color: #FFF;
+    width: 200px;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    cursor: pointer;
+   }
+
+   .dropdown-content {
+    border: 1px solid #0a0a0a1f;
+    max-width: 600px;
+    padding: 0px 20px;
+   }
+
+   .review {
+    margin: 10px auto;
+    max-width: 600px;
+   }
+
+   .review-one {
+    margin: 10px;
+   }
+
+   .about-jacket {
+    margin: 10px;
+   }
+
+   /*About page*/
+   .main-site img {
+    width: 100%;
+    max-width: 380px;
+    margin-top: 30px;
+   }
+
+   .about-text {
+    padding: 25px;
+   }
+
+  @media (min-width:401px) {
+    .product-men, .specific-product {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 20px;
+    }
+  }
 
 
  @media (min-width: 600px) {
-    nav li {
-        display: inline-block;
-        border: 1px solid #0B3A40;
-        border-radius: 4px;
-        padding: 2px 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #0B3A40;
-        width: 90px;
-    }
-
-    .container {
-        display: flex;
-        margin: 2px 200px 0px;
-        justify-content: center;
-        position: static;
-    }
-
-    header label {
-        display: none;
-    }
-    .header-item {
-        font-size: 28px;
-        margin-right: 25px;
-    }
-
-    .logo {
-        max-width: 260px;
-        margin: 10px 60px 0px 70px;
-    }
-
-    input[type=text] {
-        width: 350px;
-        height: 25px;
-        margin: 60px 150px 15px 0px;
-        font-size: 20px;
-        padding: 6px;
-     }
-
     .welcome {
         height: 500px;
         width: 1000px;
@@ -380,11 +434,69 @@ input[type=email] {
         margin: 0px;
      }
 
+     .main-site h2 {
+        grid-area: about-header;
+        font-size: 2.5em;
+        margin: auto;
+     }
+
+     .main-site img {
+        grid-area: about-img;
+     }
+
+     .main-site p {
+        grid-area: about-text;
+     }
+
+     .main-site {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "about-img about-header"
+                            "about-img about-text";
+        margin: 20px auto;
+        max-width: 800px;
+        margin-bottom: 50px;
+     }
+
  }
 
 @media (min-width: 800px) { 
-    .header-container {
-        margin: 0px 100px;
+
+    nav li {
+        display: inline-block;
+        border: 1px solid #0B3A40;
+        border-radius: 4px;
+        padding: 2px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0B3A40;
+        width: 90px;
+    }
+
+    .container {
+        display: flex;
+        margin: 2px 200px 0px;
+        justify-content: center;
+        position: static;
+    }
+
+    header label {
+        display: none;
+    }
+    .header-item {
+        font-size: 28px;
+    }
+
+    .logo {
+        max-width: 260px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    input[type=text] {
+        width: 350px;
+        height: 18px;
+        font-size: 20px;
+        padding: 6px;
     }
 
     .selling__points {
@@ -396,7 +508,31 @@ input[type=email] {
         font-size: 48px;
     }
 
+
+    /*Mens site*/
+    .product-men {
+        max-width: 1000px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+
+    /*The Coate*/
+
+    .specific-product {
+        max-width: 800px;
+        align-items: center;
+        margin: 50px auto;
+    }
+
 }
+
+
+
+
+
 
 
 
