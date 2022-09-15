@@ -8,36 +8,136 @@
     <title>Rainy Days | Cart</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <header>
-    <section class="header-container">
-      <div class="header-item">
-        <a href="index.html">
-          <img src="../images/logo_redigert.png" alt="Rainy Days" class="logo">
-        </a>
-      </div>
-          <div class="header-item">
-            <input type="text" name="searchbar">
-          </div>
-          <a href="userprofile.html" class="header-item">
-            <i class="fa-solid fa-user"></i></a>
-          <a href="myfavorites.html" class="header-item">
-            <i class="fa-solid fa-heart"></i></a>
-          <a href="shoppingcart.html" class="header-item">
-            <i class="fa-solid fa-cart-shopping"></i></a>
+  <body>
+    <header>
+      <section class="header-container">
+        <div class="header-item">
+          <a href="index.html">
+            <img src="../images/logo_redigert.png" alt="Rainy Days" class="logo">
+          </a>
+        </div>
+        <div class="header-item">
+          <input type="text" name="searchbar">
+        </div>
+        <div class="header-item">
+        <a href="userprofile.html" class="header-item">
+          <i class="fa-solid fa-user"></i></a>
+        <a href="myfavorites.html" class="header-item">
+          <i class="fa-solid fa-heart"></i></a>
+        <a href="shoppingcart.html" class="header-item">
+          <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
     </section> 
-        <nav>
-           <ul class="container">
-            <li><a href="men.html" class="item">Men</a></li>
-            <li><a href="women.html" class="item">Women</a></li>
-            <li><a href="shoes.html" class="item">Shoes</a></li>
-            <li><a href="equiptment.html" class="item">Equiptment</a></li>
-            <li><a href="contact.html" class="item">Contact</a></li>
-            <li><a href="about.html" class="item">About</a></li>
-           </ul>
-        </nav>
- </header>
-
-
-
- 
+    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+      <nav class="container">
+          <li><a href="men.html" class="item">Men</a></li>
+          <li><a href="women.html" class="item">Women</a></li>
+          <li><a href="shoes.html" class="item">Shoes</a></li>
+          <li><a href="equiptment.html" class="item">Equiptment</a></li>
+          <li><a href="contact.html" class="item">Contact</a></li>
+          <li><a href="about.html" class="item">About</a></li>
+      </nav>
+   </header>
+   <main>
+    <section class="main-chart">
+    <section class="big-screen-chart1">
+      <h1 class="h1-black">My chart</h1>
+      <section class="chart">
+        <div class="chart-pic">
+          <img src="../images/blue-jacket.png" alt="Blue jacket">
+          <h2 class="product-in-chart">The Coate</h2>
+        </div>
+        <div class="the-amount">
+          <p>-</p>
+          <p class="the-number">1</p>
+          <p>+</p>
+        </div>
+      </section>
+      <form class="form-promocode">
+        <input class="text-promocode" type="text" name="promocode" placeholder="got promocode?" />
+        <input class="apply-promocode" type="submit" value="apply" />
+      </form>
+      <section class="info-payment">
+        <div class="sub-ship">
+          <p>subtotal</p>
+          <p>shipping</p>
+        </div>
+        <div class="how-much">
+          <p>1250 kr</p>
+          <p>free</p>
+        </div>
+        <div class="total">
+          <p>total</p>
+        </div>
+        <div class="pay">
+          <p>1250kr</p>
+        </div>
+      </section>
+    </section>
+    <section class="big-screen-chart2">
+      <section class="form-wrapper">
+        <div class="log-in">
+          <p>alredy got an account?</p>
+          <form action="submit.php" method="POST" class="flex-form">
+            <input class="log-in-btn" type="submit" value="login" />
+            <input class="log-in-email" type="email" id="email" name="Enter your email" placeholder="Enter your email"/>
+              <div>
+                <input class="checkbox-login" type="checkbox" name="account" value="account" id="account">
+                <label for="account" class="create-account">Create an account</label>
+              </div>
+          </form>
+        </div>
+        <div class="shipping-address">
+          <h3>shipping address</h3>
+          <input class="contact-info" type="text" name="firstname" placeholder="first name">
+          <input class="contact-info" type="text" name="lastname" placeholder="last name">
+          <input class="contact-info" type="text" name="address" placeholder="address">
+          <input class="contact-info" type="text" name="zipcode" placeholder="zip code">
+          <input class="contact-info" type="text" name="city" placeholder="town/city">
+          <input class="contact-info" type="text" name="contry" placeholder="country">
+        </div>
+        <a href="delivery.html">
+          <button type="button" onclick="delivery.html">to payment</button>
+        </a>
+      </section>
+    </section>
+  </section>
+    <section class="newsletter">
+      <p>Get our newsletter</p>
+        <form method="post">
+          <input class="newsletter-email" type="email" id="email" name="Enter your email" placeholder="Enter your email"/>
+          <input type="submit" value="subscribe" />
+        </form>
+    </section>
+   </main>
+   <footer>
+    <div>
+      <h4>Rainy Days</h4>
+      <p class="footer_text">Fictive road 32,</p>
+      <p class="footer_text">0574 Fredrikstad</p>
+      <p class="footer_text">Norway</p>
+         <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+         </div>
+    </div>
+     <div>
+      <h4>Site map</h4>
+      <a href="about.html" class="footer_text">About</a>
+      <a href="contact.html" class="footer_text">Contact us</a>
+      <p class="footer_text">Company background</p>
+      <p class="footer_text">Retailors</p>
+     </div>
+     <div>
+      <h4>Info and help</h4>
+      <p class="footer_text">My account</p>
+      <p class="footer_text">Return of items</p>
+      <p class="footer_text">Terms and conditions</p>
+      <p class="footer_text">Coocies and privacy</p>
+      copyright &copy;
+     </div>
+   </footer>
+  </body>
   </html>

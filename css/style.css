@@ -44,9 +44,18 @@ footer .icons {
     margin-right: 120px;
 }
 
+input[type=text] {
+    width: 150px;
+}
+
 /* logo */
 .logo {
     max-width: 100px;
+}
+
+.bigger-logo-sites img {
+    max-width: 200px;
+    margin: 10px 80px;
 }
 
 /* navigation */
@@ -88,7 +97,7 @@ nav a {
 
 .container {
     position: absolute;
-    top: 67px;
+    top: 82px;
     background: #F3F2F2;
     z-index: 1000;
 }
@@ -98,144 +107,145 @@ nav a {
 }
 
 .welcome {
-  background-image: url(../images/homepage1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 300px;
-  background-position: right;
-  position: relative;
-  margin: 10px auto;
-}
-
-h1 {
-    color: white;
-    font-size: 2em;
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-}
-
-.selling__points {
-    max-width: 400px;
-    margin: 10px auto;
-}
-
-h2 {
-    font-family: Palatino Linotype;
-    font-size: 2em;
-    text-align: center;
-}
-
-.product__images {
-    display: block;
-    width: 100%;
-    overflow-x: scroll;
-    box-sizing: border-box;
-}  
-
-.product__images::-webkit-scrollbar {
-    display: none;
-}
-
-.slider_images{
-    display: block;
-    white-space: nowrap;
-}
-
-.p_image {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.p_image img, .product-pic img {
-   width: 250px;
-   height: 300px;
-} 
-
-.arrow {
-    display: none;
-}
-
-.buyjackets {
-    background-image: url(../images/bike-smaller.jpg);
+    background-image: url(../images/homepage1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 400px;
-    height: 600px; 
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: 1fr 1fr 1fr;
-    place-items: center;
-    margin: 50px auto;
-}
-
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 300px;
+    background-position: right;
+    position: relative;
+    margin: 10px auto;
+  }
+  
+  /*Home page*/
+  .welcome h1 {
+      color: white;
+      font-size: 2em;
+      text-align: left;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+  }
+  
+  .selling__points {
+      max-width: 400px;
+      margin: 10px auto;
+  }
+  
+  .h1-black, .selling__points h2, .review h2 {
+    font-family: Palatino Linotype;
     font-size: 2em;
     text-align: center;
-    color: #FFF;
-    margin-top: 200px;
-}
+  }
+  
+  .product__images {
+      display: block;
+      width: 100%;
+      overflow-x: scroll;
+      box-sizing: border-box;
+  }  
+  
+  .product__images::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .slider_images {
+      display: block;
+      white-space: nowrap;
+  }
+  
+  .p_image {
+      display: inline-block;
+      margin-right: 10px;
+  }
+  
+  .p_image img, .product-pic img {
+     width: 250px;
+     height: 300px;
+  } 
+  
+  .arrow {
+      display: none;
+  }
+  
+  .buyjackets {
+      background-image: url(../images/bike-smaller.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 600px; 
+      display: grid;
+      grid-gap: 1em;
+      grid-template-rows: 1fr 1fr 1fr;
+      place-items: center;
+      margin: 50px auto;
+  }
+  
+  h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 2em;
+      text-align: center;
+      color: #FFF;
+      margin-top: 200px;
+  }
+  
+  .buyjackets a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      padding: 20px;
+      border: 2px solid white;
+      width: 200px;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .shop1 {
+      margin: 20px 20px 5px 20px;
+  }
+  
+  .shop2 {
+      margin: 5px 20px 200px 20px;
+  }
 
-.buyjackets a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    padding: 20px;
-    border: 2px solid white;
-    width: 200px;
-    text-align: center;
-    font-weight: bold;
-}
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0px auto;
+    }
 
-.shop1 {
-    margin: 20px 20px 5px 20px;
-}
+    .newsletter p {
+        margin: 0px 10px 0px 60px;
+        margin-right: 100px;
+    }
 
-.shop2 {
-    margin: 5px 20px 200px 20px;
-}
+    input.newsletter-email {
+        display: none;
+    }
 
-.newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0px auto;
-}
-
-.newsletter p {
-    margin: 0px 10px 0px 60px;
-    margin-right: 100px;
-}
-
-input[type=email] {
-     display: none;
- }
-
- input[type=submit] {
-    width: 250px;
-    height: 40px;
-    font-size: 1.5em;
-    margin-right: 20px;
-    background: #0B3A40;
-    color: white;
-    text-transform: uppercase;
-    border-color: #0B3A40;
-    border-radius: 6px;
-    cursor: pointer;
- } 
+    input[type=submit] {
+        width: 200px;
+        height: 30px;
+        font-size: 1em;
+        margin-right: 20px;
+        background: #0B3A40;
+        color: white;
+        text-transform: uppercase;
+        border-color: #0B3A40;
+        border-radius: 6px;
+        cursor: pointer;
+    } 
 
     /*Mens site*/
-    .product-men, .specific-product, .review, .dropdown, .main-site {
+    .product-men, .specific-product, .review, .dropdown, .about-site {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     margin-bottom: 20px;
-  }
+    }
 
    .product-pic a {
     text-decoration: none;
@@ -247,16 +257,16 @@ input[type=email] {
    } 
 
    /*The Coate*/
-  
-   .size-options button {
+   .size-options button, .info-payment button, .account button, .form-wrapper button, .btn {
     width: 200px;
-    height: 30px;
-    background-color: #0B3A40;
+    height: 35px;
+    background-color: #0B3A40C9;
     color: #FFF;
-    border-color: #0B3A40;
+    border-color: #0B3A40BF;
     border-radius: 6px;
     cursor: pointer;
     text-transform: uppercase;
+    font-size: 1.2em;
    }
 
    .size-options {
@@ -272,7 +282,6 @@ input[type=email] {
     height: 25px;
     text-align: center;
     text-transform: uppercase;
-
    }
 
    .specific-product {
@@ -296,20 +305,20 @@ input[type=email] {
    }
 
    .review {
-    margin: 10px auto;
+    margin: 10px auto 50px auto;
     max-width: 600px;
    }
 
    .review-one {
-    margin: 10px;
+    margin: 20px;
    }
 
    .about-jacket {
-    margin: 10px;
+    margin: 20px;
    }
 
    /*About page*/
-   .main-site img {
+   .about-site img {
     width: 100%;
     max-width: 380px;
     margin-top: 30px;
@@ -318,6 +327,227 @@ input[type=email] {
    .about-text {
     padding: 25px;
    }
+
+   /*Contact page*/
+   .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+   }
+
+   input.contact-info {
+    display: block;
+    width: -moz-available;
+    height: 30px;
+    padding: 6px;
+    font-size: 12px;
+    margin: 4px 0px;
+    text-transform: capitalize;
+   }
+
+
+   #message {
+    height: 200px;
+    width: -moz-available;
+    padding: 6px;
+    font-size: 12px;
+   }
+
+   .contact-p {
+    margin: 0px;
+    opacity: 40%;
+    text-transform: capitalize;
+    font-size: .8em;
+   }
+
+   .contact-info h3 {
+    color: black;
+    text-align: left;
+    margin: 0px;
+   }
+
+   .contact-info {
+    padding: 20px;
+    justify-content: center;
+   }
+
+   /*Chart site*/
+   .chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px;
+    gap: 10px;
+   }
+
+   .chart-pic img {
+    width: 200px;
+    height: 250px;
+   }
+
+   .product-in-chart {
+    margin-top: 5px;
+   }
+
+   .the-amount {
+    display: flex;
+    font-size: 1.5em;
+    margin: auto;
+   }
+
+   .the-number {
+    border: 1px solid;
+    padding: 2px 5px;
+    margin: 24px 7px;
+   }
+
+   .form-promocode {
+    margin: 30px 25px 0px;
+   }
+
+   input.apply-promocode {
+    width: 50px;
+    height: 30px;
+    text-transform: capitalize;
+    font-size: 1em;
+    background-color: #ABCADE;
+    border-color: #ABCADE;
+   }
+
+   input.text-promocode {
+    height: 22px;
+    opacity: 80%;
+   }
+
+   .sub-ship {
+    grid-area: text-pay;
+    }
+
+    .how-much {
+    grid-area: number-pay;
+    }
+
+    .total {
+    grid-area: total;
+    }
+
+    .pay {
+    grid-area: pay;
+    }
+
+   .info-payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text-pay number-pay"
+                         "total pay";
+    margin: 20px 0px 50px 25px;
+    gap: 5px;
+    text-transform: capitalize;
+   }
+
+   .flex-form {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .log-in p, .create-account {
+    font-size: .7em;
+    text-transform: capitalize;
+    opacity: 60%;
+    margin: 10px 0px;
+   }
+
+   input.log-in-btn {
+    width: 300px;
+    height: 40px;
+    background: #9CC1D9;
+    border-color: #9CC1D9;
+   }
+
+    input.log-in-email {
+    width: 284px;
+    margin-top: 5px;
+    height: 15px;
+    padding: 6px;
+    font-size: 12px;
+    }
+
+    input.checkbox-login {
+    margin: 0;
+    }
+
+    .shipping-address h3 {
+    color: black;
+    text-transform: capitalize;
+    margin: 30px 0px;
+    font-size: 1.3em;
+    text-align: left;
+    }
+
+    .shipping-address {
+        margin-bottom: 20px;
+    }
+
+    /*Delivery site*/
+    .delivery-site, .main-paysuccess {
+        background-color: #F3F2F2;
+        padding: 20px;
+        margin-bottom: -20px;
+    }
+
+
+    .delivery-site p {
+        text-transform: capitalize;
+        font-size: 1.2em;
+    }
+
+    .select-places {
+        height: 38px;
+        width: 350px;
+        background-color: #FFF;
+        border: 1px solid #D7D7D7;
+        border-radius: 6px;
+        text-align: left;
+        margin: 2px 0px;
+        padding: 7px;
+        cursor: pointer;
+    }
+
+    .delivery-section {
+        margin: 40px 0px;
+    }
+
+    .btn {
+        margin: 50px 80px;
+        width: 250px;
+        height: 45px;
+        text-transform: capitalize;
+    }
+
+    .select-places i {
+        float: right;
+        margin-right: 20px;
+        font-size: 1.3em;
+    }
+
+
+    /*Pay success site*/
+    .paysuccess {
+        max-width: 600px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .paysuccess button {
+        margin: 30px 0px 10px;
+    }
+
+    .paysuccess-btn {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
 
   @media (min-width:401px) {
     .product-men, .specific-product {
@@ -330,34 +560,37 @@ input[type=email] {
 
  @media (min-width: 600px) {
     .welcome {
-        height: 500px;
-        width: 1000px;
+        height: 400px;
+        width: 550px;
         margin: 40px auto;
         background-position: center;
     }
 
-    h1 {
+    .header-item {
+        font-size: 24px;
+    }
+
+    .welcome h1 {
         font-size: 2.5em;
         width: 350px;
-        margin-left: 200px;
     }
 
     .buyjackets {
         background-image: url(../images/RainyDaysLandskape.jpg);
         width: 100%;
-        height: 670px;
+        height: 314px;
         display: grid;
         grid-gap: 1em;
         grid-template-areas: "h3 h3";
-        grid-template-rows: auto 1fr 1fr;
+        grid-template-rows: auto 1fr;
         place-items: center;
         justify-content: start;
         margin: 150px 0px 0px;
     }
 
     .buyjackets a {
-        font-size: 35px;
-        width: 300px;
+        font-size: 18px;
+        width: 170px;
     }
 
     .shop1 {
@@ -369,64 +602,25 @@ input[type=email] {
     }
     
     h3 {
-        font-size: 48px;
-        padding: 10px;
-        margin-top: 100px;
+        font-size: 30px;
+        margin-top: 15px;
         margin-left: 60px;
     }
 
     h3 {grid-area: h3;}
 
-    .selling__points {
-        margin-left: 60px;
-        max-width: 1200px;
-        text-align: center;
+    .main-chart, .delivery-site-section {
+        margin: 10px 160px;
     }
 
-    .slider_images{
-        display: flex;
-        gap: 30px;
-        margin-left: 40px;
-     }
-
-     .product__images{
-        overflow-x: visible;
-     }
-
-     .arrow {
-        display: block;
-        float: right;
-        margin-top: 20px;
-        text-decoration: none;
-        font-size: 30px;
-        color: black;
-    }
-   
-    .newsletter {
-        flex-direction: row;
-        font-weight: bold;
+    .the-amount {
+        font-size: 1.8em;
     }
 
-    .newsletter p {
-        margin-right: 0px;
-    }
-
-    input[type=email] {
-        display: inline;
-        width: 350px;
-        height: 25px;
-        margin: 0px 10px;
-     }
-
-     input[type=submit] {
-        width: 200px;
-        height: 30px;
-        font-size: 1em;
-     }
 
      footer {
         grid-template-columns: repeat(3, 1fr);
-        padding-left: 200px;
+        justify-content: center;
      }
 
      footer .icons {
@@ -434,21 +628,21 @@ input[type=email] {
         margin: 0px;
      }
 
-     .main-site h2 {
+     .about-site h2 {
         grid-area: about-header;
         font-size: 2.5em;
         margin: auto;
      }
 
-     .main-site img {
+     .about-site img {
         grid-area: about-img;
      }
 
-     .main-site p {
+     .about-site p {
         grid-area: about-text;
      }
 
-     .main-site {
+     .about-site {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "about-img about-header"
                             "about-img about-text";
@@ -456,6 +650,19 @@ input[type=email] {
         max-width: 800px;
         margin-bottom: 50px;
      }
+
+     .contact-info {
+        display: flex;
+        gap: 50px;  
+    }
+
+    .btn {
+        margin: 30px 200px;
+    }
+
+    .paysuccess h1 {
+        font-size: 48px;
+    }
 
  }
 
@@ -486,28 +693,90 @@ input[type=email] {
         font-size: 28px;
     }
 
-    .logo {
+    input[type=text] {
+        width: 300px;
+    }
+
+    .logo, .bigger-logo-sites img {
         max-width: 260px;
         margin-top: 10px;
         margin-left: 50px;
     }
 
-    input[type=text] {
-        width: 350px;
-        height: 18px;
-        font-size: 20px;
-        padding: 6px;
+    .welcome {
+        height: 500px;
+        width: 1000px;
+    }
+
+    .welcome h1 {
+        margin-left: 200px;
     }
 
     .selling__points {
         margin: 50px auto;
         position: relative;
     }
+
+    .selling__points {
+        margin-left: 60px;
+        max-width: 1200px;
+        text-align: center;
+    }
+
+    .slider_images {
+        display: flex;
+        gap: 30px;
+        margin-left: 40px;
+     }
+
+     .product__images {
+        overflow-x: visible;
+     }
+
+     .arrow {
+        display: block;
+        float: right;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    }
     
-    h2 {
+    .h1-black, .selling__points h2 {
         font-size: 48px;
     }
 
+    .buyjackets {
+        height: 670px;
+    }
+
+    .buyjackets a {
+        font-size: 35px;
+        width: 300px;
+        margin-bottom: 320px;
+    }
+
+    h3 {
+        font-size: 48px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        font-weight: bold;
+    }
+
+    .newsletter p {
+        margin-right: 0px;
+    }
+
+    input.newsletter-email {
+        display: inline;
+        width: 300px;
+        height: 20px;
+        margin: 0px 10px;
+     }
 
     /*Mens site*/
     .product-men {
@@ -520,12 +789,33 @@ input[type=email] {
     
 
     /*The Coate*/
-
     .specific-product {
         max-width: 800px;
         align-items: center;
         margin: 50px auto;
     }
+
+    /*Contact page*/
+    .contact-info h3 {
+        padding: 0px;
+        font-size: 30px;
+    }
+
+    /*chart*/
+    .chart-pic img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .main-chart, .delivery-site-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .big-screen-chart2 {
+        padding-top: 200px;
+    }
+
 
 }
 
