@@ -292,7 +292,119 @@ opacity: 0;
 }
 
 /*The Coate*/
+.chart_button {
+    position: relative;
+    width: 230px;
+    height: 30px; 
+    background-color: var(--button-color);
+    color: var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: .3sec ease-in-out;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.chart_button:active {
+    transform: scale(.9);
+}
+
+.chart_button .fa-cart-shopping {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.fa-box {
+    position: absolute;
+    z-index: 3;
+    top: -20%;
+    left:52%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+.chart_button span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
 .btn {
+    opacity: 1;
+}
+
+.added {
+    opacity: 0;
+}
+
+.chart_button.clicked .fa-cart-shopping {
+    animation: cart 1.5s ease-in-out forwards;
+}
+
+.chart_button.clicked .fa-box {
+    animation: box 1.5s ease-in-out forwards;
+}
+
+.chart_button.clicked .btn {
+    animation: txt1 1.5s ease-in-out forwards;
+}
+
+.chart_button.clicked .added {
+    animation: txt2 1.5s ease-in-out forwards;
+}
+
+@keyframes cart  {
+    0% {
+        left: -10%;
+    }
+    40%, 60% {
+        left: 50%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+@keyframes box  {
+    0%, 40% {
+        top: -20%;
+    }
+    60% {
+        top: 30%;
+        left: 52%;
+    }
+    100% {
+        top: 30%;
+        left: 110%;
+    }
+}
+
+@keyframes txt1 {
+    0% {
+        opacity: 1;
+    }
+    20%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes txt2 {
+    0%, 80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.pay_button {
     width: 200px;
     height: 35px;
     background-color: var(--button-color);
@@ -300,14 +412,18 @@ opacity: 0;
     border-color: var(--button-color);
     border-radius: 6px;
     cursor: pointer;
-    text-transform: capitalize;
     font-size: 1.2em;
+    text-transform: capitalize;
 }
 
-.btn:hover {
+.pay_button:hover {
     background-color: var(--white);
     color: var(--button-color);
 }
+
+.pay_button:active {
+    transform: scale(.9);
+} 
 
 .checkbox-size {
     display: flex;
@@ -325,13 +441,6 @@ input[type=checkbox] {
     height: 36px;
     text-align: center;
     cursor: pointer;
-    transition-property: background;
-    transition-duration: 1s;
-}
-
-input[name=size]:checked ~ label[for=s] {
-    background-color: var(--light-blue);
-    color: var(--white);
 }
 
 .about-jacket button {
@@ -362,7 +471,7 @@ cursor: pointer;
 
 .dropdown-content {
 border: 1px solid var(--drop-down-color);
-max-width: 600px;
+max-width: 210px;
 padding: 0px 20px;
 }
 
@@ -503,6 +612,7 @@ border-color: var(--input-color);
 input.text-promocode {
 height: 22px;
 opacity: 80%;
+width: auto;
 }
 
 .sub-ship {
@@ -756,9 +866,9 @@ display: flex;
 gap: 50px;  
 }
 
-.btn {
+/*.btn {
     margin: 30px 200px;
-}
+} */
 
 .paysuccess h1 {
     font-size: 48px;
@@ -884,7 +994,8 @@ input.newsletter-email {
 
 .main-chart, .delivery-site-section {
     display: flex;
-    justify-content: center;
+    max-width: 800px;
+    margin: 0px auto;
 }
 
 .big-screen-chart2 {
