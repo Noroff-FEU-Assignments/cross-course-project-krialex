@@ -179,13 +179,12 @@ nav a {
   }
   
   .buyjackets {
-      background-image: url(../images/bike-smaller.jpg);
+      background-image: url(../images/bike-on-hill-small.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-      width: 80%;
+      width: 90%;
       height: 600px; 
       display: grid;
-      grid-gap: 1em;
       grid-template-rows: 1fr 1fr 1fr;
       place-items: center;
       margin: 50px auto;

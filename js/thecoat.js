@@ -11,7 +11,7 @@ for (let i = 0; i < sizeOptions.length; i++) {
       this.style.backgroundColor = "white";
     }
   });
-}
+};
 
 /* Add to chart animation */
 const cartButton = document.querySelector(".chart_button");
@@ -33,6 +33,7 @@ const dropDownContentThree = document.querySelector("#mydropdown3");
 dropDownContent.innerHTML = ""; 
 
 dropDownOne.onclick = function() {
+    hideAllDropDowns();
     dropDownContent.innerHTML = `<div class="dropdown-content">
                                     <p>The water-repellent surface has been technologically researched to find the perfect balance of air and water-repellent to give our users the best possible experience on a trip in nature.</p></div>`;
 };  
@@ -40,6 +41,7 @@ dropDownOne.onclick = function() {
 dropDownContentTwo.innerHTML = ""; 
 
 dropDownTwo.onclick = function() {
+    hideAllDropDowns();
     dropDownContentTwo.innerHTML = `<div class="dropdown-content">
                                     <p>This is a jacket that warms on cooler days and keeps you dry in light rain showers.</p></div>`;
 };
@@ -47,12 +49,18 @@ dropDownTwo.onclick = function() {
 dropDownContentThree.innerHTML = ""; 
 
 dropDownThree.onclick = function() {
+    hideAllDropDowns();
     dropDownContentThree.innerHTML = `<div class="dropdown-content">
                                     <p>Lorem ipsum this is a normale size jacket.</p></div>`;
 };
 
+function hideAllDropDowns() {
+    dropDownContent.innerHTML = "";
+    dropDownContentTwo.innerHTML = "";
+    dropDownContentThree.innerHTML = "";
+}
 
-  
+
 
 
      
