@@ -462,7 +462,7 @@ justify-items: baseline;
 border: 1px solid;
 padding: 10px 50px;
 background-color: var(--white);
-width: 150px;
+width: 300px;
 font-size: 1.2em;
 text-transform: capitalize;
 cursor: pointer;
@@ -470,7 +470,7 @@ cursor: pointer;
 
 .dropdown-content {
 border: 1px solid var(--drop-down-color);
-max-width: 210px;
+max-width: 360px;
 padding: 0px 20px;
 }
 
@@ -673,6 +673,7 @@ font-size: 12px;
 
 input.checkbox-login {
 margin: 0;
+display: inline;
 }
 
 .shipping-address h3 {
@@ -759,7 +760,7 @@ margin-bottom: 20px;
 
 
 @media (min-width:401px) {
-.product-men, .specific-product {
+.product-men {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin: 20px;
@@ -768,6 +769,11 @@ margin-bottom: 20px;
 
 
 @media (min-width: 600px) {
+.specific-product {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
 .welcome {
     height: 400px;
     width: 550px;

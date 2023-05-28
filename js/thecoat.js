@@ -51,7 +51,7 @@ dropDownContentThree.innerHTML = "";
 dropDownThree.onclick = function() {
     hideAllDropDowns();
     dropDownContentThree.innerHTML = `<div class="dropdown-content">
-                                    <p>Lorem ipsum this is a normale size jacket.</p></div>`;
+                                    <p>Lorem ipsum dipsum tootdi this is a normale size jacket.</p></div>`;
 };
 
 function hideAllDropDowns() {

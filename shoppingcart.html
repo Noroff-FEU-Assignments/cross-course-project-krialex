@@ -55,11 +55,11 @@
    <main>
     <section class="main-chart">
     <section class="big-screen-chart1">
-      <h1 class="h1-black">My chart</h1>
+      <h1 class="h1-black">My cart</h1>
       <section class="chart">
         <div class="chart-pic">
           <img src="../images/blue-jacket.png" alt="Blue jacket">
-          <h2 class="product-in-chart">The Coate</h2>
+          <h2 class="product-in-chart">The Coat</h2>
         </div>
         <div class="the-amount">
           <p>-</p>
@@ -103,16 +103,27 @@
         </div>
         <div class="shipping-address">
           <h3>shipping address</h3>
-          <input class="contact-info" type="text" name="firstname" placeholder="first name">
-          <input class="contact-info" type="text" name="lastname" placeholder="last name">
-          <input class="contact-info" type="text" name="address" placeholder="address">
-          <input class="contact-info" type="text" name="zipcode" placeholder="zip code">
-          <input class="contact-info" type="text" name="city" placeholder="town/city">
-          <input class="contact-info" type="text" name="contry" placeholder="country">
+          <form class="shipping-form">
+            <input class="contact-info" type="text" name="firstname" id="shippingName" placeholder="first name">
+            <div class="form-error" id="first-name-error">Please insert your full name</div>
+            <input class="contact-info" type="text" name="lastname" id="shippingLastName" placeholder="last name">
+            <div class="form-error" id="last-name-error">Please insert your full name</div>
+            <input class="contact-info" type="text" name="address" id="shippingAddress" placeholder="address">
+            <div class="form-error" id="address-error">Please insert your full name</div>
+            <input class="contact-info" type="text" name="zipcode" id="shippingZip" placeholder="zip code">
+            <div class="form-error" id="zip-error">Please insert your full name</div>
+            <input class="contact-info" type="text" name="city" id="shippingCity" placeholder="town/city">
+            <div class="form-error" id="city-error">Please insert your full name</div>
+            <input class="contact-info" type="text" name="country" id="shippingCountry" placeholder="country">
+            <div class="form-error" id="country-error">Please insert your full name</div>
+            <a href="delivery.html">
+              <button class="pay_button validate_button" >to payment</button>
+            </a>
+             
+          </form>
+        
         </div>
-        <a href="delivery.html">
-          <button class="pay_button" type="button" onclick="delivery.html">to payment</button>
-        </a>
+        
       </section>
     </section>
   </section>
@@ -152,5 +163,6 @@
       copyright &copy;
      </div>
    </footer>
+   <script src="js/shippingform.js"></script>
   </body>
   </html>
