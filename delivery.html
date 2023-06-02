@@ -41,18 +41,38 @@
                     <option value="solli-torg">Solli torg, Jonasvei 159</option>
                     <option value="jernbanetorget">Jernbanetorget, Traraveien 7</option>
                 </select>
-                <p class="select-places">Deliver to billing address <i class="fa-solid fa-house"></i></p>
+                <div class="pay-checks">
+                  <input type="checkbox" id="pay-options"/>
+                  <label class="select-places" for="pay-options">Deliver to billing address <i class="fa-solid fa-house"></i></label>  
+                </div>
             </div>
             <div class="delivery-section">
                 <p>choose payment</p>
+                <div class="pay-checks">
+                  <input type="checkbox" id="pay-options"/>
+                  <label class="select-places" for="pay-options">Invoice to billing address <i class="fa-regular fa-file-lines"></i></label>  
+                </div>
+                <div class="pay-checks">
+                  <input type="checkbox" id="pay-options"/>
+                  <label class="select-places" for="pay-options">Paypal <i class="fa-brands fa-cc-paypal"></i></label>  
+                </div>
+                <div class="pay-checks">
+                  <input type="checkbox" id="pay-options"/>
+                  <label class="select-places" for="pay-options">Visa/credit card <i class="fa-brands fa-cc-visa"></i></label>  
+                </div>
+
+                
+                <!--
                 <p class="select-places">Invoice to billing address <i class="fa-regular fa-file-lines"></i></p>
                 <p class="select-places">Paypal <i class="fa-brands fa-cc-paypal"></i></p>
                 <p class="select-places">Visa/credit card <i class="fa-brands fa-cc-visa"></i></p>
+                -->
+                
+                <a href="paysucsess.html">
+                  <button class="pay_button" type="button" onclick="paysucess.html">finish shopping</button>
+              </a>
             </div>
         </section>
-        <a href="paysucsess.html">
-            <button class="pay_button" type="button" onclick="paysucess.html">finish shopping</button>
-        </a>
    </main>
    <footer>
     <div>
