@@ -160,7 +160,7 @@ nav a {
     text-align: center;
   }
   
-  .p_image img, .product-pic img { /* mulig feil på product-pic img: 250 x 300 */
+  .p_image img, .product-pic img { 
      width: 200px;
      height: 250px;  
   } 
@@ -489,8 +489,6 @@ margin: 20px;
 margin: 20px;
 }
 
-
-
 /*About page*/
 .about-site img {
 width: 100%;
@@ -704,7 +702,6 @@ margin-bottom: 20px;
     font-size: 1.2em;
 }
 
-/*bare test*/ 
 .select-places {
     width: 300px;
     background-color: var(--white);
@@ -932,10 +929,6 @@ header label {
     height: 250px;
 }
 
-/* .buyjackets {
-    height: 670px;
-} */
-
 .buyjackets a {
     font-size: 35px;
     width: 300px;
@@ -972,7 +965,6 @@ input.newsletter-email {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
 
 /*The Coate*/
 .specific-product {
