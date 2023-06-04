@@ -14,11 +14,21 @@ for (let i = 0; i < sizeOptions.length; i++) {
 };
 
 /* Add to chart animation */
+let clickCount = 1;
+
 const cartButton = document.querySelector(".chart_button");
+const cartNumber = document.getElementById("cartNumber");
 
 cartButton.onclick = function() {
     cartButton.classList.add("clicked");
+
+    cartNumber.textContent = clickCount;
+
+    clickCount++;
 };
+
+
+
 
 
 

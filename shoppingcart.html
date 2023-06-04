@@ -38,7 +38,7 @@
             <a href="myfavorites.html" class="header-item">
               <i class="fa-solid fa-heart"></i></a>
             <a href="shoppingcart.html" class="header-item">
-              <i class="fa-solid fa-cart-shopping"></i></a>
+              <i class="fa-solid fa-cart-shopping"></i><div id="cartNumber" class="cart-number number-active">0</div></a>
             </div>
       </section> 
          <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
@@ -57,16 +57,15 @@
     <section class="big-screen-chart1">
       <h1 class="h1-black">My cart</h1>
       <section class="chart">
-        <div class="chart-pic">
+        <div class="chart-pic product-pic">
           <img src="../images/blue-jacket.png" alt="Blue jacket">
           <h2 class="product-in-chart">The Coat</h2>
         </div>
         <div class="the-amount">
-          <p>-</p>
-          <p class="the-number">1</p>
-          <p>+</p>
+          <i class="fa-solid fa-trash-can" id="trashCan"></i>
         </div>
       </section>
+      <div class="delete-item"></div>
       <form class="form-promocode">
         <input class="text-promocode" type="text" name="promocode" placeholder="Got promocode?" />
         <input class="apply-promocode" type="submit" value="apply" />
@@ -162,5 +161,6 @@
    </footer>
    <script src="js/shippingform.js"></script>
    <script src="js/zip-api.js"></script>
+   <script src="js/items-in-cart.js"></script>
   </body>
   </html>

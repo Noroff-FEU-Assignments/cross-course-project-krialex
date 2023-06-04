@@ -122,6 +122,7 @@ nav a {
     max-width: fit-content;
     margin-right: 5px;
     color: var(--dark-blue);
+    position: relative;
 }
 
 .container {
@@ -572,14 +573,6 @@ margin: 0px 20px;
 gap: 10px;
 }
 
-.chart-pic img {
-width: 200px;
-height: 250px;
-border: 1px solid var(--grey);
-border-radius: 6px;
-box-shadow: var(--grey) 1px 1px 5px;
-}
-
 .product-in-chart {
 margin-top: 5px;
 }
@@ -590,10 +583,8 @@ font-size: 1.5em;
 margin: auto;
 }
 
-.the-number {
-border: 1px solid;
-padding: 2px 5px;
-margin: 24px 7px;
+.fa-trash-can {
+    cursor: pointer;
 }
 
 .form-promocode {
@@ -689,13 +680,24 @@ text-align: left;
 margin-bottom: 20px;
 }
 
+.cart-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #D9381E;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 0.5em;
+    z-index: 1;
+}
+
 /*Delivery site*/
 .delivery-site, .main-paysuccess {
     background-color: var(--light-grey);
     padding: 20px;
     margin-bottom: -20px;
 }
-
 
 .delivery-site p {
     text-transform: capitalize;
@@ -725,7 +727,7 @@ margin-bottom: 20px;
     display: flex;
 }
 
-.select-places::after { /* Mulig å bytte til div? Og gjøre den "clicked"? */
+.pay-clicked { 
     background-color: var(--light-blue);
     color: var(--white);
     } 
@@ -762,8 +764,6 @@ margin-bottom: 20px;
     margin-top: 70px;
 }
 
-
-
 @media (min-width:401px) {
 .product-men {
     grid-template-columns: repeat(2, 1fr);
@@ -771,7 +771,6 @@ margin-bottom: 20px;
     margin: 20px;
 }
 }
-
 
 @media (min-width: 600px) {
 .specific-product {
@@ -876,10 +875,6 @@ display: flex;
 gap: 50px;  
 }
 
-/*.btn {
-    margin: 30px 200px;
-} */
-
 .paysuccess h1 {
     font-size: 48px;
 }
@@ -912,10 +907,6 @@ header label {
 .header-item {
     font-size: 28px;
 }
-/*
-input[type=text] {
-    width: 300px;
-} */
 
 .logo, .bigger-logo-sites img {
     max-width: 260px;
@@ -997,11 +988,6 @@ input.newsletter-email {
 }
 
 /*chart*/
-.chart-pic img {
-    width: 250px;
-    height: 300px;
-}
-
 .main-chart, .delivery-site-section {
     display: flex;
     max-width: 800px;
